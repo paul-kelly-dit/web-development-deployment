@@ -4,7 +4,7 @@ const hostname = '0.0.0.0';
 const port = 3500;
 
 const server = http.createServer((req, res) => {
-    res.statusCode = 200;
+    res.statusCode = 404;
     res.setHeader('Content-Type', 'text/html');
     res.end('Hello World');
 });

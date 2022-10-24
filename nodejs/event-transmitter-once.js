@@ -8,8 +8,8 @@ someFunction = function (){
     console.log(`Value of n is: ${n}`);
 }
 
-myEmitter.once('event', someFunction);
+myEmitter.on('event-a', someFunction);
 
-myEmitter.emit('event');
-myEmitter.emit('event');
-myEmitter.emit('event');
+myEmitter.emit('event-a');
+myEmitter.emit('event-b');
+myEmitter.emit('event-c');
