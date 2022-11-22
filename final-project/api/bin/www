@@ -5,24 +5,14 @@
  */
 
 var app = require('../app');
-var debug = require('debug')('mongodbnode:server');
+var debug = require('debug')('lab04-c15341261-express:server');
 var http = require('http');
-var mongoose = require('mongoose');
-
-var mongoDB = 'mongodb://127.0.0.1/users';
-mongoose.connect(mongoDB);
-
-//Get the default connection
-var db = mongoose.connection;
-
-//Bind connection to error event (to get notification of connection errors)
-db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
 /**
  * Get port from environment and store in Express.
  */
 
-var port = normalizePort(process.env.PORT || '3100');
+var port = normalizePort(process.env.PORT || '3001');
 app.set('port', port);
 
 /**
